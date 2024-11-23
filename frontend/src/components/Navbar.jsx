@@ -318,7 +318,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between py-5 px-10 w-full max-w-screen-xl mx-auto">
         {/* Left: Logo */}
         <Link to="/" className="flex-grow">
-          <img src={assets.logo} className="w-40" alt="Ecommerce Logo" />
+          <img src={assets.logo} className="w-60" alt="Ecommerce Logo" />
         </Link>
 
         {/* Center: Navbar Links */}

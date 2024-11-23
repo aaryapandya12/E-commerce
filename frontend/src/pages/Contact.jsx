@@ -23,9 +23,9 @@ const Contact = () => {
               </p>
               <p className='text-gray-600'>
                 Tel: (415) 555-0132 <br/> 
-                Email: admin@forever.com
+                Email: admin@snapshop.com
               </p>
-              <p className='font-semibold text-2xl text-gray-800'>Careers at Forever</p>
+              <p className='font-semibold text-2xl text-gray-800'>Careers at SnapShop</p>
               <p className='text-gray-600'>
                 Learn more about our teams and job openings.
               </p>

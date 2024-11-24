@@ -6,13 +6,12 @@ import razorpay from 'razorpay'
 const currency = 'inr'
 const deliveryCharge = 10
 
-//gateway initialize
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const razorpayInstance = new razorpay({
     key_id : process.env.RAZORPAY_KEY_ID,
     key_secret: process.env.RAZORPAY_KEY_SECRET,
 })
-// placing orders using COD Method
+
 const placeOrder = async(req,res) =>{
     try {
         const {userId,items,amount,address} = req.body;
@@ -39,7 +38,7 @@ const placeOrder = async(req,res) =>{
     }
 }
 
-//verify stripe
+
 const verifyStripe = async(req,res) =>{
     const{orderId,success,userId} = req.body
     try {
@@ -58,7 +57,7 @@ const verifyStripe = async(req,res) =>{
     }
 }
 
-//placing orders using Stripe Method
+
 const placeOrderStripe = async(req,res) =>{
     try {
         const{userId,items,amount,address} = req.body
@@ -115,7 +114,7 @@ const placeOrderStripe = async(req,res) =>{
 
 }
 
-//placing orders using Razorpay Method
+
 const placeOrderRazorpay = async(req,res) =>{
     try {
         const{userId,items,amount,address} = req.body
